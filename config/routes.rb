@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # routes autocreated for authentication through devise
+  devise_for :users
   # resources route auto created, to automate for crud 
   resources :friends
   get 'home/about'
