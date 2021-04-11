@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # resources route auto created, to automate for crud 
   resources :friends
   get 'home/about'
-  root 'home#index'
+  # original home#index took to homepage hello world
+  # root 'home#index'
+  root 'friends#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

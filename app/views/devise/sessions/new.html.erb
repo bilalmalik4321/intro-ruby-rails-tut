@@ -1,13 +1,17 @@
-<h2>Log in</h2>
 
+<div class="card">
+<div class="card-header">
+  <h4>Log in</h4>
+</div>
+<div class="card-body">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-  <div class="field form-group">
+  <div class="field">
     <%= f.email_field :email, class:"form-control", placeholder:"Email", autofocus: true, autocomplete: "email" %>
   </div>
   <br/>
 
-  <div class="field form-group">
+  <div class="field">
     <%= f.password_field :password, class:"form-control", placeholder:"Password", autocomplete: "current-password" %>
   </div>
 
@@ -23,5 +27,8 @@
     <%= f.submit "Log in", class:"btn btn-secondary" %>
   </div>
 <% end %>
+</div>
+</div>
+
 <br/>
 <%= render "devise/shared/links" %>
